@@ -58,34 +58,7 @@ const Gallerypics = () => {
 
   return (
     <>
-      <div className="p-4">
-        <div className="flex flex-wrap gap-4 ">{printdata}</div>
-        <div className="flex justify-center items-center  gap-4 mt-4">
-          <button
-
-          disabled={index===1}
-            onClick={() => {
-              if (index > 1) {
-                setIndex(index - 1);
-                // setUserData([]);
-              }
-            }}
-            className="bg-blue-700 text-white text-xl disabled:opacity-50 rounded px-3 py-1 active:scale-95"
-          >
-            Prev
-          </button>
-          {index}
-          <button
-            onClick={() => {
-              setIndex(index + 1);
-              // setUserData([]);
-            }}
-            className="bg-blue-700 text-white text-xl rounded px-3 py-1 active:scale-95"
-          >
-            Next
-          </button>
-        </div>
-      </div>
+   
     </>
   );
 };
